@@ -97,6 +97,7 @@ public class Main {
         }
     }
 
+    //Test the user and check if the answer is correct
     public static void User_Test(){
         System.out.println("What is your User Id");
         String ans = new String();
@@ -126,6 +127,7 @@ public class Main {
         }
     }
 
+    //Program to print the floyds triangle
     public static void floyds(){
         int val=1,val2=1,range;
         System.out.println("Enter the range of the triangle");
