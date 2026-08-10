@@ -107,7 +107,7 @@ public class Main {
         int c=1;
         while(c<3){
             if(ans.equalsIgnoreCase("User")){
-                System.out.println("Correct Answer");
+                System.out.println("Good");
                 break;
             }
             else{
@@ -118,7 +118,7 @@ public class Main {
         }
         if(c==3){
             if(ans.equalsIgnoreCase("User")) {
-                System.out.println("Correct Answer");
+                System.out.println("Good");
             }
             else{
                 System.out.println("\nCorrect answer is User");
@@ -152,10 +152,11 @@ public class Main {
     }
 
     public static void mainApp(){
-        while(true) {
-            System.out.println("\n\n1. Duplicate Values of Array\n2. Find Smallest and Largest elements of an array" +
+        boolean flag=true;
+        while(flag) {
+            System.out.print("\n\n1. Duplicate Values of Array\n2. Find Smallest and Largest elements of an array" +
                     "\n3. move every positive number to the left and negative to the right\n4. Java Program to test user" +
-                    "\n5. Print Floyds Triangle\nEnter CTRL^C to Exit\nEnter Your Choice");
+                    "\n5. Print Floyds Triangle\n\nEnter any other Number or Character to Exit\n\nEnter Your Choice : ");
 
             int n;
             n = r.nextInt();
@@ -181,7 +182,8 @@ public class Main {
                     break;
                 }
                 default:{
-                    System.out.println("Wrong Input");
+                    System.out.println("\nLeaving Switch");
+                    flag=false;
                     break;
                 }
             }
@@ -195,10 +197,10 @@ public class Main {
         name = r.next();
         System.out.println("Enter Password");
         password = r.next();
-        mainApp();
+//        mainApp();
         if((name.equalsIgnoreCase("admin")||name.equalsIgnoreCase("user"))&&(password.equalsIgnoreCase("admin")||password.equalsIgnoreCase("user"))){
-            mainApp();
             System.out.println("Success");
+            mainApp();
         }
         else{
             System.out.println("Invalid User");
