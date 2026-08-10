@@ -91,7 +91,7 @@ public class Main {
                 }
             }
         }
-        System.out.println("POS_NEG");
+        System.out.print("POS_NEG : ");
         for(int i=0;i<size;i++){
             System.out.print(a[i]+" ");
         }
@@ -100,7 +100,8 @@ public class Main {
     public static void User_Test(){
         System.out.println("What is your User Id");
         String ans = new String();
-        System.out.println("Enter your Answer : ");
+        boolean pass=false;
+        System.out.print("Enter your Answer : ");
         ans= r.next();
         int c=1;
         while(c<3){
@@ -109,19 +110,24 @@ public class Main {
                 break;
             }
             else{
-                System.out.println("You have "+(3-c)+" attempts left");
+                System.out.print("\nYou have "+(3-c)+" attempts left\nEnter your Answer : ");
                 c++;
                 ans = r.next();
             }
         }
         if(c==3){
-            System.out.println("The answer is User");
+            if(ans.equalsIgnoreCase("User")) {
+                System.out.println("Correct Answer");
+            }
+            else{
+                System.out.println("\nCorrect answer is User");
+            }
             c=0;
         }
     }
 
     public static void floyds(){
-        int val=1,val2=1,f=0,range;
+        int val=1,val2=1,range;
         System.out.println("Enter the range of the triangle");
         range = r.nextInt();
         System.out.println("***********Floyds Triangle 1 ***********");
@@ -134,64 +140,66 @@ public class Main {
         }
         System.out.println("***********Floyds Triangle 2***********");
         for(int i=0;i<range;i++){
+            int f = (i%2==0)?1:0;
             for(int j=0;j<=i;j++){
-                if(f==0){
-                    System.out.print(1+" ");
-                    f=1;
-                }
-                else {
-                    System.out.print(0+" ");
-                    f=0;
-                }
+                    System.out.print(f+" ");
+                    f = 1-f;
             }
             System.out.println("");
         }
     }
 
     public static void mainApp(){
-        System.out.println("\n1. Duplicate Values of Array\n2. Find Smallest and Largest elements of an array" +
-                "\n3. move every positive number to the left and negative to the right\n4. Java Program to test user" +
-                "\n5. Print Floyds Triangle\nEnter Your Choice");
+        while(true) {
+            System.out.println("\n\n1. Duplicate Values of Array\n2. Find Smallest and Largest elements of an array" +
+                    "\n3. move every positive number to the left and negative to the right\n4. Java Program to test user" +
+                    "\n5. Print Floyds Triangle\nEnter CTRL^C to Exit\nEnter Your Choice");
 
-        int n;
-        n=r.nextInt();
-        switch(n){
-            case 1:{
-                constructArray(1);
-                break;
-            }
-            case 2:{
-                constructArray(2);
-                break;
-            }
-            case 3:{
-                constructArray(3);
-                break;
-            }
-            case 4:{
-                User_Test();
-                break;
-            }
-            case 5:{
-                floyds();
+            int n;
+            n = r.nextInt();
+            switch (n) {
+                case 1: {
+                    constructArray(1);
+                    break;
+                }
+                case 2: {
+                    constructArray(2);
+                    break;
+                }
+                case 3: {
+                    constructArray(3);
+                    break;
+                }
+                case 4: {
+                    User_Test();
+                    break;
+                }
+                case 5: {
+                    floyds();
+                    break;
+                }
+                default:{
+                    System.out.println("Wrong Input");
+                    break;
+                }
             }
         }
     }
 
     public static void main (String args[]){
-//        String name = new String();
-//        String password = new String();
-//        System.out.println("Enter User Id");
-//        name = r.next();
-//        System.out.println("Enter Password");
-//        password = r.next();
+        String name = new String();
+        String password = new String();
+        System.out.println("Enter User Id");
+        name = r.next();
+        System.out.println("Enter Password");
+        password = r.next();
         mainApp();
-//        if((name.equalsIgnoreCase("admin")||name.equalsIgnoreCase("user"))&&(password.equalsIgnoreCase("admin")||password.equalsIgnoreCase("user"))){
-//            mainApp();
-////            System.out.println("Success");
-//        }
-//        else{
-//            System.out.println("Invalid User");
-//        }
+        if((name.equalsIgnoreCase("admin")||name.equalsIgnoreCase("user"))&&(password.equalsIgnoreCase("admin")||password.equalsIgnoreCase("user"))){
+            mainApp();
+            System.out.println("Success");
+        }
+        else{
+            System.out.println("Invalid User");
+        }
     }
 }
