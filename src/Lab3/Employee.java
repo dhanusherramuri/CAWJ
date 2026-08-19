@@ -63,10 +63,7 @@ public class Employee {
        boolean f = false;
        for(Employee e : Details){
            if(e.empID == eid){
-               Details.remove(empID);
-               Details.remove(empName);
-               Details.remove(empSalary);
-               Details.remove(empDesignation);
+               Details.remove(e);
                f = true;
                System.out.println("Deleted Succesfully");
                break;
