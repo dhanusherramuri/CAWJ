@@ -32,7 +32,7 @@ import java.io.*;
             }
             case 2:{
                 int ch;
-                System.out.println("1. Search\n2. Salary Increment\n3. Display");
+                System.out.println("1. Search\n2. Salary Increment\n3. Delete\n4. Display");
                 ch = r.nextInt();
                 if(ch == 1){
                     e.search_user();
@@ -41,6 +41,9 @@ import java.io.*;
                     e.salary_increment();
                 }
                 else if(ch == 3){
+                    e.delete();
+                }
+                else if(ch == 4){
                     e.display();
                 }
                 break;

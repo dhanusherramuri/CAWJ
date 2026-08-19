@@ -56,6 +56,27 @@ public class Employee {
        }
     }
 
+    void delete(){
+       int eid;
+       System.out.println("Enter the id to be deleted");
+       eid = r.nextInt();
+       boolean f = false;
+       for(Employee e : Details){
+           if(e.empID == eid){
+               Details.remove(empID);
+               Details.remove(empName);
+               Details.remove(empSalary);
+               Details.remove(empDesignation);
+               f = true;
+               System.out.println("Deleted Succesfully");
+               break;
+           }
+       }
+       if(!f){
+           System.out.println("Not Found");
+       }
+    }
+
     void display(){
        for(Employee e : Details){
            System.out.println("ID : "+e.empID+"\nName : "+e.empName+"\nDesignation : "+e.empDesignation+"\nSalary : "+e.empSalary);
