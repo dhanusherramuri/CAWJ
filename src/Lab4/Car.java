@@ -15,6 +15,10 @@ public class Car {
 
     public static ArrayList<Car> Cars = new ArrayList<>();
 
+    Car(){
+
+    }
+
     Car(String name, String model, String Yop, String colour,double price){
         this.name = name;
         this.model = model;
