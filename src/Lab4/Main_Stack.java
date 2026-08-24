@@ -1,6 +1,5 @@
-package Lab3;
+package Lab4;
 import java.util.*;
-import java.io.*;
 
 public class Main_Stack {
     public static Scanner r = new Scanner(System.in);
@@ -8,7 +7,7 @@ public class Main_Stack {
         int ch;
         Stack s = new Stack();
         while(true){
-        System.out.println("1. Create a stack\n2. Push\n3. Pop\n4. Display\n5. Empty\n6. Exit");
+        System.out.println("\n1. Create a stack\n2. Push\n3. Pop\n4. Display\n5. Empty\n6. Exit");
         ch = r.nextInt();
         if(ch == 6){
             System.out.println("Leaving the application");
