@@ -35,6 +35,7 @@ public class Rectangle extends Shape{
     double getLength(){
         return this.length;
     }
+    
 
     public String toString(){
         return "A Rectangle with width = "+this.getWidth()+" and length = "+this.getLength()+" which is a subclass of "+super.toString()+".\n";
