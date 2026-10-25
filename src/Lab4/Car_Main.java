@@ -1,8 +1,9 @@
 package Lab4;
 
-public class Car_main {
-
+public class Car_Main {
     public static void main(String [] args){
+//        Car c6 = new Car();
+//        Car c5 = new Car();
         Car c1 = new Car("Brezza","VX","02/10/2017","White",650500.00);
         Car c2 = new Car("Venue","SX","20/09/2018","White",750000.00);
         Car c3 = new Car("Ciaz","VX","15/12/2015","White",600000.00);
