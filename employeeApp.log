@@ -1,0 +1,4 @@
+Oct 20, 2026 5:44:18 PM Lab9.EmployeeDAO insertEMP
+INFO: 1employee(s) inserted successfully
+Oct 20, 2026 5:44:20 PM Lab9.EmployeeDAO fetchDAO
+INFO: ID =  26 NAME = DhanushSALARY = 50000
