@@ -1,0 +1,16 @@
+Nov 02, 2026 2:25:51 PM Lab11.ERMS PrepareERMS
+INFO: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "Lab11.ERMS.conn" is null
+Nov 02, 2026 2:39:41 PM Lab11.ERMS PrepareERMS
+INFO: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "Lab11.ERMS.conn" is null
+Nov 02, 2026 2:40:12 PM Lab11.ERMS InsertStudent
+INFO: Cannot invoke "java.sql.PreparedStatement.setString(int, String)" because "Lab11.ERMS.insert_pst" is null
+Nov 02, 2026 2:41:30 PM Lab11.ERMS PrepareERMS
+INFO: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "Lab11.ERMS.conn" is null
+Nov 02, 2026 2:41:41 PM Lab11.ERMS PrepareERMS
+INFO: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "Lab11.ERMS.conn" is null
+Nov 02, 2026 2:41:47 PM Lab11.ERMS PrepareERMS
+INFO: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "Lab11.ERMS.conn" is null
+Nov 02, 2026 2:43:37 PM Lab11.ERMS PrepareERMS
+INFO: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "Lab11.ERMS.conn" is null
+Nov 02, 2026 2:45:13 PM Lab11.ERMS PrepareERMS
+INFO: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "Lab11.ERMS.conn" is null
