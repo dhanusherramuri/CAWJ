@@ -14,3 +14,7 @@ Nov 02, 2026 2:43:37 PM Lab11.ERMS PrepareERMS
 INFO: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "Lab11.ERMS.conn" is null
 Nov 02, 2026 2:45:13 PM Lab11.ERMS PrepareERMS
 INFO: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "Lab11.ERMS.conn" is null
+Nov 02, 2026 2:57:18 PM Lab11.ERMS InsertStudent
+INFO: Data truncation: Data too long for column 'Student_ID' at row 1
+Nov 02, 2026 2:57:51 PM Lab11.ERMS InsertStudent
+INFO: INSERTED ROWS SUCCESSFULLY
