@@ -25,11 +25,7 @@ public class DBConnect {
             fis.close();
 
             String driver = prop.getProperty("db.driver");
-            System.out.println("driver: " + driver);
-
             String url = prop.getProperty("db.url");
-            System.out.println("url: " + url);
-
             String username = prop.getProperty("db.uname");
             String password = prop.getProperty("db.pwd");
 
